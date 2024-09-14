@@ -1,101 +1,241 @@
-.transactions {
-   margin: 20px 0;
- }
- 
- .transaction-header {
+.investmentHeader{
+  max-width: 100%;
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: column;
+   background-color: white;
+}
+
+.ivestmetlist{
+   gap: 15px;
    display: flex;
-   justify-content: space-between;
+   flex-wrap: wrap;
+   padding: 20px;
    align-items: center;
-   margin-bottom: 15px;
- }
- 
- .filters select {
-   padding: 10px;
-   margin-right: 10px;
- }
- 
- .actions button {
-   padding: 10px 15px;
-   margin-left: 10px;
-   background-color: #007bff;
-   color: white;
-   border: none;
-   border-radius: 4px;
-   cursor: pointer;
- }
- 
- .actions .export {
-   background-color: #6c757d;
- }
- 
- /* Table Styling */
- .transaction-table {
-   width: 100%;
-   border-collapse: collapse;
- }
- 
- .transaction-table th, .transaction-table td {
-   padding: 12px;
-   text-align: left;
-   border-bottom: 1px solid #ddd;
- }
- 
- .transaction-table th {
-   background-color: #f8f9fa;
- }
- 
- .transaction-table td {
-   font-size: 14px;
- }
- 
- .transaction-table .status {
-   padding: 5px 10px;
-   border-radius: 12px;
- }
- 
- .status.success {
-   background-color: #d4edda;
-   color: #155724;
- }
- 
- .status.error {
-   background-color: #f8d7da;
-   color: #721c24;
- }
- 
- /* Icons for Actions */
- .view-icon {
-   width: 20px;
-   height: 20px;
-   background-image: url('view-icon.svg');
-   background-size: cover;
-   cursor: pointer;
- }
- 
- /* Responsive Design */
- @media (max-width: 768px) {
-   .transaction-header {
-     flex-direction: column;
-     align-items: flex-start;
-   }
- 
-   .transaction-table th, .transaction-table td {
-     padding: 10px;
-   }
- 
-   .filters select {
-     margin-bottom: 10px;
-   }
- 
-   .actions {
-     margin-top: 10px;
-   }
- }
- 
- @media (max-width: 576px) {
-   .transaction-table th, .transaction-table td {
-     font-size: 12px;
-     padding: 8px;
-   }
- }
- 
+   justify-content: flex-start;
+}
+
+.investmetH1{
+   font-size: 20px;
+   color: rgba(0, 0, 0, 0.309);
+}
+
+.investmentspan{
+   font-size: 22px;
+}
+
+.mainInvestmet{
+  padding: 20px;
+   font-size: 35px;
+   margin-top: -30px;
+   color: rgba(0, 0, 0, 0.509);
+}
+
+.transactions {
+  width: 1100px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: white;
+  border: 15px solid rgba(234, 236, 240, 1)
+}
+
+.transaction_child{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.transaction_detail{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.tansaction_main{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.transaction-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+
+.tabs button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  padding: 10px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.tabs .active {
+  border-bottom: 2px solid #007bff;
+  font-weight: bold;
+}
+
+.transaction-header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.buttons{
+ gap: 10px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.buttons select{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+}
+
+.filters select, .filters input {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.search {
+  width: 300px;
+}
+
+.actions button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.actions .export {
+  background-color: #6c757d;
+}
+
+.actions .add-payment {
+  background-color: #28a745;
+}
+
+
+.transaction-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.transaction-table th, 
+.transaction-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.transaction-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.transaction-table td {
+  font-size: 14px;
+}
+
+.transaction-table .status {
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.status.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.view-icon {
+  width: 20px;
+  height: 20px;
+  background-image: url('view-icon.svg');
+  background-size: cover;
+  cursor: pointer;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .transaction-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .transaction-table th, 
+  .transaction-table td {
+    padding: 10px;
+  }
+
+  .filters select {
+    margin-bottom: 10px;
+  }
+
+  .actions {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .transaction-table th, 
+  .transaction-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+}

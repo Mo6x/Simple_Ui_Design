@@ -1,0 +1,182 @@
+.investmentHeader{
+  max-width: 100%;
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: column;
+   background-color: white;
+}
+
+.ivestmetlist{
+   gap: 15px;
+   display: flex;
+   flex-wrap: wrap;
+   padding: 20px;
+   align-items: center;
+   justify-content: flex-start;
+}
+
+.investmetH1{
+   font-size: 20px;
+   color: rgba(0, 0, 0, 0.309);
+}
+
+.investmentspan{
+   font-size: 22px;
+}
+
+.mainInvestmet{
+  padding: 20px;
+   font-size: 35px;
+   margin-top: -30px;
+   color: rgba(0, 0, 0, 0.509);
+}
+
+.investmentsContainer {
+  width: 1100px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: white;
+  border: 15px solid rgba(234, 236, 240, 1)
+ }
+ 
+ .metricsContainer {
+   display: flex;
+   gap: 20px;
+   flex-wrap: wrap;
+   justify-content: space-between;
+ }
+ 
+ .metricCard {
+   background: white;
+   padding: 20px;
+   border-radius: 10px;
+   text-align: center;
+   flex: 1;
+   min-width: 200px;
+   margin-bottom: 20px;
+   border: 2px solid rgba(234, 236, 240, 1)
+ }
+ 
+ .metricCard h3 {
+   margin: 10px 0;
+   font-size: 24px;
+ }
+ 
+ .metricChange {
+   color: green;
+   font-size: 14px;
+ }
+ 
+ .metricChange .up {
+   color: green;
+ }
+ 
+ .metricChange .down {
+   color: red;
+ }
+ 
+ .tabContainer {
+   display: flex;
+   gap: 10px;
+   margin-bottom: 20px;
+ }
+ 
+ button {
+   padding: 10px 20px;
+   background-color: white;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+   cursor: pointer;
+ }
+ 
+ button.activeTab {
+   background-color: #007bff;
+   color: white;
+ }
+ 
+ .investmentHistory {
+   background: white;
+   padding: 20px;
+   border-radius: 10px;
+   margin-top: 20px;
+ }
+ 
+ .tableHeader {
+   display: flex;
+   gap: 20px;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 20px;
+ }
+ 
+ .dateFilter,
+ .typeFilter,
+ .searchInput,
+ .exportButton {
+   padding: 10px;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+ }
+ 
+ .exportButton {
+   background-color: #007bff;
+   color: white;
+   cursor: pointer;
+ }
+ 
+ .investmentTable {
+   width: 100%;
+   border-collapse: collapse;
+   margin-bottom: 20px;
+ }
+ 
+ .investmentTable th,
+ .investmentTable td {
+   border: 1px solid #ddd;
+   padding: 10px;
+   text-align: left;
+ }
+ 
+ .investmentTable th {
+   background-color: #f9f9f9;
+ }
+ 
+ .actionButton {
+   padding: 5px 10px;
+   background-color: #007bff;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+ }
+ 
+ .pagination {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+ 
+ .prevButton,
+ .nextButton {
+   padding: 10px 20px;
+   background-color: white;
+   border: 1px solid #ddd;
+   border-radius: 5px;
+   cursor: pointer;
+ }
+
+ @media (max-width: 768px) {
+   .metricsContainer {
+     flex-direction: column;
+   }
+ 
+   .tableHeader {
+     flex-direction: column;
+     align-items: flex-start;
+   }
+ 
+   .pagination {
+     flex-direction: column;
+   }
+ }
+ 

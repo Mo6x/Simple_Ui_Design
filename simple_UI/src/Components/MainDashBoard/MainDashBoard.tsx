@@ -7,9 +7,6 @@ export const MainDashBoard: React.FC = () => {
    return (
      <div className={Styles.maindashboardparents}>
          <Sidebar />
-         <div className={Styles.manindashboardcontainer}>
-            
-         </div>
      </div>
    )
  }

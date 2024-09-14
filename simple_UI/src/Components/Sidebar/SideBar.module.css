@@ -1,10 +1,16 @@
+.mainsidebarcontiner{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .sidebar {
    width: 210px;
    padding: 30px;
    display: flex;
    max-height: 100vh;
    flex-direction: column;
-   background-color: #f4f5f7;
+   background-color: white;
    justify-content: space-between;
  }
  
@@ -57,7 +63,6 @@
    flex-wrap: wrap;
    padding: 15px;
    margin-bottom: 10px;
-   background-color: #fff;
    border-radius: 8px;
    cursor: pointer;
    flex-direction: row;
@@ -134,6 +139,13 @@
  .profileEmail {
    color: #888;
    font-size: 0.85em;
+ }
+
+ .mainContent{
+  display: flex;
+  flex-wrap: wrap;
+   /* padding: 10px; */
+   /* margin-top: -40px; */
  }
  
  @media (max-width: 768px) {
